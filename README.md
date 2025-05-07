@@ -1,73 +1,78 @@
-# 🛒 Projeto E-commerce (Console Java)
+# Projeto E-commerce de Produtos Tecnológicos - Java
 
-Este é um sistema de comércio eletrônico simples desenvolvido em Java, como parte do Performance Goal do Bloco 01. O projeto simula um e-commerce de produtos de tecnologia, utilizando conceitos fundamentais de Programação Orientada a Objetos (POO) e boas práticas de desenvolvimento.
+<br />
 
----
+<div align="center">
+	<img src="https://i.imgur.com/IaD4lwg.png" title="source: imgur.com" width="35%"/>
+</div>
+<br />
 
-## 📚 Objetivos do Projeto
+<div align="center">
+  <img src="https://img.shields.io/github/languages/top/feperonica/projeto_final_bloco_01?style=flat-square" />
+  <img src="https://img.shields.io/github/repo-size/feperonica/projeto_final_bloco_01?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/count/feperonica/projeto_final_bloco_01?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/feperonica/projeto_final_bloco_01?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/feperonica/projeto_final_bloco_01?style=flat-square" />
+  <img src="https://img.shields.io/github/issues-pr/feperonica/projeto_final_bloco_01?style=flat-square" />
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" alt="Status: Em Desenvolvimento">
+</div>
 
-- Simular um sistema de e-commerce no terminal
-- Aplicar conceitos como:
-  - Herança
-  - Abstração
-  - Polimorfismo
-  - Interface
-  - Collections (`ArrayList`)
-  - Tratamento de exceções
+------
 
----
+## 1. Descrição
 
-## 🏗️ Estrutura do Projeto
+O **E-commerce de Produtos Tecnológicos** é um sistema de console em Java criado para simular a gestão de uma loja virtual. O projeto permite o cadastro, listagem, atualização, exclusão e simulação de compra de produtos de tecnologia.
 
-- `ProdutoTecnologico` (classe abstrata)
-- `Periferico` e `Componente` (classes filhas)
-- `Repository` (interface)
-- `Controller` (gerencia o CRUD)
-- `Menu` (classe com o menu principal e entrada do usuário)
+Desenvolvido com foco na aplicação prática dos conceitos de **Programação Orientada a Objetos (POO)**, o sistema implementa:
 
----
+- Abstração e Herança
+- Polimorfismo
+- Interface
+- Collections (`ArrayList`)
+- Tratamento de Exceções
 
-## 🚀 Funcionalidades
+------
 
-- Cadastro de produtos tecnológicos
-- Listagem de produtos
-- Atualização de dados
-- Exclusão de produtos
-- Transferência entre categorias (simulado)
-- Busca por nome ou ID
-- Validação de dados com tratamento de erros
+## 2. Funcionalidades
 
----
+1. **Cadastrar Produto**
+2. **Listar todos os Produtos**
+3. **Buscar Produto por ID**
+4. **Atualizar Produto**
+5. **Remover Produto**
+6. **Comprar Produto**
+7. **Sair do Sistema**
 
-## 🛠️ Tecnologias utilizadas
+------
 
-- Java 17
-- Eclipse / Spring Tool Suite (STS)
-- Git e GitHub
+## 3. Requisitos
 
----
+- Java JDK 17+
+- Eclipse ou Spring Tool Suite (STS)
+- Git
 
-## 🕒 Execução
+------
 
-Para rodar o projeto:
+## 4. Como Executar
 
-1. Clone este repositório:
-   ```
-   git clone https://github.com/feperonica/projeto_final_bloco_01.git
-   ```
-2. Abra o projeto no Eclipse/STS
-3. Rode a classe `Menu.java`
+```bash
+git clone https://github.com/feperonica/projeto_final_bloco_01.git
+```
 
----
+1. Abra o projeto no Eclipse/STS
+2. Execute a classe `Menu.java`
+3. Use o console para navegar pelo menu do sistema
 
-## 📌 Observações
+------
 
-- Projeto individual proposto pela Generation Brasil
-- Tempo limite de desenvolvimento: 3h30min
-- Dividido em branches: `01_Menu`, `02_Model_Repository`, `03_Controller`, `04_extras` (opcional)
+## 5. Contribuição
 
----
+Este é um projeto educacional individual. Melhorias e sugestões são sempre bem-vindas por meio de **issues** ou **pull requests**.
 
-## 📷 Prints e Testes
+------
 
-Os prints de tela e testes estão disponíveis na pasta `/prints` e foram incluídos conforme solicitado na plataforma Canvas.
+## 6. Contato
+
+**Felipe da Silva Peronica Ferreira**  
+📧 felipeperonica@gmail.com  
+🔗 https://github.com/feperonica
