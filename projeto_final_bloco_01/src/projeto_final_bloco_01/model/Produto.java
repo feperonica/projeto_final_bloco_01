@@ -49,17 +49,17 @@ public abstract class Produto {
 	}
 
 	public void visualizar() {
-		
+
 		NumberFormat nfMoeda = NumberFormat.getCurrencyInstance();
-		
+
 		String categoria = "";
-				
+
 		switch (this.categoria) {
 		case 1 -> categoria = "Componente";
 		case 2 -> categoria = "Periférico";
 		default -> categoria = "Inválido";
-	}
-		
+		}
+
 		System.out.println("ID do Produto: " + this.id);
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Categoria: " + categoria);
