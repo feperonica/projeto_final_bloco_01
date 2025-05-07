@@ -2,6 +2,9 @@ package projeto_final_bloco_01;
 
 import java.io.IOException;
 import java.util.Scanner;
+
+import projeto_final_bloco_01.model.Componente;
+import projeto_final_bloco_01.model.Periferico;
 import projeto_final_bloco_01.util.Cores;
 
 public class Menu {
@@ -10,6 +13,12 @@ public class Menu {
 
 		Scanner leia = new Scanner(System.in);
 		int opcao;
+		
+		Componente c1 = new Componente(1, "Placa de Vídeo RTX 3060", 1, 2499.90, "12GB GDDR6 - NVIDIA");
+		c1.visualizar();
+		System.out.println("---------------------------------------");
+		Periferico p1 = new Periferico(2, "Teclado Mecânico RGB", 2, 399.90, "USB");
+		p1.visualizar();
 
 		while (true) {
 			System.out.println(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_RED_BOLD
