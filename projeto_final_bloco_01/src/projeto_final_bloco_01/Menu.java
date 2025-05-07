@@ -32,6 +32,8 @@ public class Menu {
 			System.out.println("                                                     " + Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
+			
+			leia.nextLine();
 
 			if (opcao == 7) {
 				System.out.println("\nObrigado por utilizar nosso sistema!");
