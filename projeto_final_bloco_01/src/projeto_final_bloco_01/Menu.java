@@ -38,7 +38,8 @@ public class Menu {
 			System.out.println("█           3 - Buscar Produto por ID               █");
 			System.out.println("█           4 - Atualizar Produto                   █");
 			System.out.println("█           5 - Remover Produto                     █");
-			System.out.println("█           6 - Sair                                █");
+			System.out.println("█           6 - Buscar Produto pelo Nome            █");
+			System.out.println("█           7 - Sair                                █");
 			System.out.println("█                                                   █");
 			System.out.println("█▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀█");
 			System.out.println("█Entre com a opção desejada:                        █" + Cores.TEXT_RESET);
@@ -46,7 +47,7 @@ public class Menu {
 			opcao = leia.nextInt();
 			leia.nextLine();
 
-			if (opcao == 6) {
+			if (opcao == 7) {
 				System.out.println("\nObrigado por utilizar nosso sistema!");
 				sobre();
 				leia.close();
@@ -130,6 +131,15 @@ public class Menu {
 				leia.nextLine();
 				produto.deletar(id);
 				keyPress();
+			}
+			case 6 -> {
+			    System.out.println("Buscar Produto por Nome\n");
+			    System.out.println("Digite o nome ou parte do nome do produto: ");
+			    String nomeBusca = leia.nextLine();
+
+			    produto.procurarPorNome(nomeBusca);
+
+			    keyPress();
 			}
 			default -> System.out.println("\nOpção Inválida!\n");
 			}

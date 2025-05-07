@@ -64,6 +64,20 @@ public class ProdutoController implements ProdutoRepository {
 			System.out.printf("\nO Produto ID %d não foi encontrado.\n", id);
 		}
 	}
+	public void procurarPorNome(String nome) {
+	    var resultados = listaProdutos.stream()
+	        .filter(p -> p.getNome().toLowerCase().contains(nome.toLowerCase()))
+	        .toList();
+
+	    if (resultados.isEmpty()) {
+	        System.out.println("\n⚠️ Nenhum produto encontrado com esse nome.");
+	    } else {
+	        resultados.forEach(p -> {
+	            p.visualizar();
+	            System.out.println("---------------------------------------");
+	        });
+	    }
+	}
 
 	// Métodos Auxiliares
 
