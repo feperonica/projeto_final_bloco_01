@@ -44,7 +44,14 @@ public class Menu {
 			System.out.println("█▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀█");
 			System.out.println("█Entre com a opção desejada:                        █" + Cores.TEXT_RESET);
 
-			opcao = leia.nextInt();
+			String entrada = leia.nextLine();
+
+			try {
+				opcao = Integer.parseInt(entrada);
+			} catch (NumberFormatException e) {
+				System.out.println("\nEntrada inválida. Digite apenas números.");
+				continue; // volta para o início do while
+			}
 			leia.nextLine();
 
 			if (opcao == 7) {
